@@ -2,6 +2,7 @@
 ================================================
 
 ## Goals:
+- Create a top down structure to allow for easy navigation and code readability
 - Reduce amount of code repetition and add separation of concerns (http/db/bl/dal/areas) 
 - Make the code testable by reducing mocking requirements and providing contextual support to eliminate static state
 
