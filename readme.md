@@ -17,15 +17,19 @@
     * endpoints\ - End point implementations which map end points to api code
         * rest.go
         * grpc.go
-    * api\ - Api code separated into business areas which interacts with the dal api and model structures
+    * api\ - Api code separated into business areas which interacts with the dal and returns/accepts api models
+        * model\ - Api related models
+            * charts\ 
+            * branches\
+            * stonks\
         * charts\ 
         * branches\
         * stonks\
-    * model\ - Business related structures
-        * charts\ 
-        * branches\
-        * stonks\
-    * dal\ - Implementations manipulating data using the model structures as the interface data
+    * dal\ - Dal code which interacts with the databases and returns/accepts dal models
+        * model\ - Dal related models
+            * charts\ 
+            * branches\
+            * stonks\
         * bigquery\
             * charts.go 
             * branches.go
