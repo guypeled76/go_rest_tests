@@ -14,10 +14,10 @@
 * app\
   * main.go - The initialization of the end points and the application / session context
   * context\ - App context implementation that needs to be propagated as the first parameter for most methods
-  * endpoints\ - End point implementations
+  * endpoints\ - End point implementations which map end points to api code
    * rest.go
    * grpc.go
-  * api\ - Api code separated into business areas
+  * api\ - Api code separated into business areas which interacts with the dal api and model structures
    * charts\ 
    * branches\
    * stonks\
