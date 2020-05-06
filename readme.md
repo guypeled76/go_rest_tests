@@ -15,25 +15,31 @@
     * endpoints\ - End point implementations which map end points to api code and initialize the call/session context
         * rest.go - Implementation based on gin
         * grpc.go - future implementation
+        * ... 
     * api\ - Api code separated into business areas which interacts with the dal and returns/accepts api models
         * model\ - Api related models
             * charts\ 
             * branches\
             * stonks\
+            * ...
         * charts\ 
         * branches\
         * stonks\
+        * ...
     * dal\ - Dal code which interacts with the databases and returns/accepts dal models
         * model\ - Dal related models
             * charts\ 
             * branches\
             * stonks\
+            * ...
         * bigquery\
             * charts.go 
             * branches.go
             * stonks.go
+            * ...
         * postgres\
             * charts.go
             * branches.go
             * stonks.go
+            * ...
 
