@@ -12,26 +12,26 @@
 ## Proposed package structure
 
 * app\
-..* main.go - The initialization of the end points and the application / session context
-..* context\ - App context implementation that needs to be propagated as the first parameter for most methods
-..* endpoints\ - End point implementations
-...* rest.go
-...* grpc.go
-..* api\ - Api code separated into business areas
-...* charts\ 
-...* branches\
-...* stonks\
-..* model\ - Business related structures
-...* charts\ 
-...* branches\
-...* stonks\
-..* dal\ - Implementations manipulating data using the model structures as the interface data
-...* bigquery\
-....* charts.go 
-....* branches.go
-....* stonks.go
-...* postgres\
-....* charts.go
-....* branches.go
-....* stonks.go
+  * main.go - The initialization of the end points and the application / session context
+  * context\ - App context implementation that needs to be propagated as the first parameter for most methods
+  * endpoints\ - End point implementations
+   * rest.go
+   * grpc.go
+  * api\ - Api code separated into business areas
+   * charts\ 
+   * branches\
+   * stonks\
+  * model\ - Business related structures
+   * charts\ 
+   * branches\
+   * stonks\
+  * dal\ - Implementations manipulating data using the model structures as the interface data
+   * bigquery\
+    * charts.go 
+    * branches.go
+    * stonks.go
+   * postgres\
+    * charts.go
+    * branches.go
+    * stonks.go
 
