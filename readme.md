@@ -2,11 +2,8 @@
 ================================================
 
 ## Goals:
-- Reduce amount of code repetition and separation of concerns (http/db/bl/dal) 
-- Make the code testable by reducing mocking requirements and providing contextual support
-- Separate code into packages by the functional and business context.
-- Make specific package implementations private to allow for less specific naming and reducing clutter in every scope.
-- Eliminate static state to allow for complete power over testing context and other potential running contexts.
+- Reduce amount of code repetition and add separation of concerns (http/db/bl/dal/areas) 
+- Make the code testable by reducing mocking requirements and providing contextual support to eliminate static state
 
 
 ## Proposed package structure
