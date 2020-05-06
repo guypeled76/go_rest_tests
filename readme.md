@@ -12,9 +12,9 @@
 ## Proposed package structure
 
 * app\
-    * main.go - The initialization of the end points and the application / session context
+    * main.go - The initialization of the end points and application the context
     * context\ - App context implementation that needs to be propagated as the first parameter for most methods
-    * endpoints\ - End point implementations which map end points to api code
+    * endpoints\ - End point implementations which map end points to api code and initialize the call/session context
         * rest.go
         * grpc.go
     * api\ - Api code separated into business areas which interacts with the dal and returns/accepts api models
